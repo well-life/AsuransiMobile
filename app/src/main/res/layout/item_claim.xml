@@ -1,0 +1,87 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#8cf3ff"
+    android:background="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ID Klaim -->
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- ID Kontrak -->
+        <TextView
+            android:id="@+id/idKontrakTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTextView"
+            android:layout_marginTop="4dp"
+            android:text="ID Kontrak"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- Jenis Asuransi -->
+        <TextView
+            android:id="@+id/jenisAsuransiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idKontrakTextView"
+            android:layout_marginTop="4dp"
+            android:text="Jenis Asuransi"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- No Polis -->
+        <TextView
+            android:id="@+id/noPolisTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jenisAsuransiTextView"
+            android:layout_marginTop="4dp"
+            android:text="No Polis"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- Nama Customer -->
+        <TextView
+            android:id="@+id/namaCustomerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noPolisTextView"
+            android:layout_marginTop="4dp"
+            android:text="Nama Customer"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- Label Status -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/status_label_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="Status"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
